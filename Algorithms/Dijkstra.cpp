@@ -15,7 +15,6 @@ void findShortestDistances(int N, int start_node, int shortestDistance[], vector
 		pair<int, int> P = Q.top();
 		Q.pop();
 		int curnode = P.second, curdistance = P.first;
-		cout<<"LOL "<<curnode<<" "<<curdistance<<endl;
 		for(int i = 0; i < graph[curnode].size(); i++)
 		{
 			int neighbour = graph[curnode][i].second, cost = graph[curnode][i].first;
